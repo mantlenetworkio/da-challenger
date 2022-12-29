@@ -2,7 +2,7 @@ module github.com/mantlenetworkio/da-challenger
 
 go 1.18
 
-replace github.com/Layr-Labs/datalayr/common v0.0.0-00010101000000-000000000000 => ../mantle/datalayr-mantle/common
+replace github.com/Layr-Labs/datalayr/common => ../mantle/datalayr-mantle/common
 
 replace github.com/Layr-Labs/datalayr/lib/merkzg v0.0.0-00010101000000-000000000000 => ../mantle/datalayr-mantle/lib/merkzg
 

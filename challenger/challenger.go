@@ -299,12 +299,12 @@ func (c *Challenger) postFraudProof(store *graphView.DataStore, fraudProof *Frau
 	disclosureProofs := fraudProof.ToDisclosureProofs()
 	auth := c.Cfg.L1Client.PrepareAuthTransactor()
 	//get the corresponding rollup store number
-	fraudStoreNumber, err := c.EigenDaContract.DataStoreIdToRollupStoreNumber(&bind.CallOpts{}, store.StoreNumber)
+	l2BlockNumber, err := c.EigenDaContract.DataStoreIdToL2BlockNumber(&bind.CallOpts{}, store.StoreNumber)
 	if err != nil {
 		return nil, err
 	}
 	//send the fraud proof to the chain
-	tx, err := c.EigenDaContract.ProveFraud(auth, fraudStoreNumber, new(big.Int).SetUint64(uint64(fraudProof.StartingSymbolIndex)), searchData, disclosureProofs)
+	tx, err := c.EigenDaContract.ProveFraud(auth, l2BlockNumber, new(big.Int).SetUint64(uint64(fraudProof.StartingSymbolIndex)), searchData, disclosureProofs)
 	return tx, err
 }
 
@@ -315,7 +315,7 @@ func (c *Challenger) Start() error {
 }
 
 func (c *Challenger) Stop() {
-	// s.cancel()
+	// c.cancel()
 	c.wg.Wait()
 }
 
