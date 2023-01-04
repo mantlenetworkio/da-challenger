@@ -45,7 +45,7 @@ make datalayr-mantle
 docker build -t challenger:latest -f ./Dockerfile .
 ```
 
-### 4.start 
+### 4.start binary
 
 Config .env, You can refer to .env_example, if config finished, you can exec following command
 
@@ -53,3 +53,8 @@ Config .env, You can refer to .env_example, if config finished, you can exec fol
 ./da-challenger
 ```
 
+### 5.start docker
+
+```bash
+wait
+```
