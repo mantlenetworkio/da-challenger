@@ -12,7 +12,7 @@ EDLC_ABI_ARTIFACT := ./contract/da/BVM_EigenDataLayrChain.sol/BVM_EigenDataLayrC
 da-challenger:
 	env GO111MODULE=on go build -v $(LDFLAGS) ./cmd/da-challenger
 
-datalayr:
+datalayr-mantle:
 	cd ./datalayr-mantle/contracts && ./compile.sh compile-el && ./compile.sh compile-rollup
 
 clean:
@@ -43,6 +43,7 @@ binding:
 
 .PHONY: \
 	da-challenger \
+	datalayr-mantle \
 	binding \
 	clean \
 	test \
