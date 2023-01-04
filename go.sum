@@ -477,6 +477,8 @@ github.com/mantlenetworkio/mantle/bss-core v0.0.0-20221201061228-0589a659d047 h1
 github.com/mantlenetworkio/mantle/bss-core v0.0.0-20221201061228-0589a659d047/go.mod h1:NFQHTC7R0jDLH9ihMAFaDzCOW4i3PtaV3MQDRvIJFQQ=
 github.com/mantlenetworkio/mantle/l2geth v0.0.0-20221201061228-0589a659d047 h1:STN0N9zjjoJ20umGnIjeRGGX5pj/6tK2QAv0KIW23Ic=
 github.com/mantlenetworkio/mantle/l2geth v0.0.0-20221201061228-0589a659d047/go.mod h1:Gb5aIh6+aStBbatHciL8aapFApOgEFaGpIGNfZukgV0=
+github.com/mantlenetworkio/mantle/mt-batcher v0.0.0-20230104065557-9a1a212af1e1 h1:TJeJBVJDIElcodrVc4NevL4b6nSTVCI6zE9SM4cS/go=
+github.com/mantlenetworkio/mantle/mt-batcher v0.0.0-20230104065557-9a1a212af1e1/go.mod h1:iFWbNYJpzVNs7q+uCZmNe272hn3cb2mrWSE4/JwIsoM=
 github.com/matryer/moq v0.0.0-20190312154309-6cfb0558e1bd/go.mod h1:9ELz6aaclSIGnZBoaSLZ3NAl1VTufbOrXBPvtcy6WiQ=
 github.com/mattn/go-colorable v0.0.9/go.mod h1:9vuHe8Xs5qXnSaW/c/ABM9alt+Vo+STaOChaDxuIBZU=
 github.com/mattn/go-colorable v0.1.0/go.mod h1:9vuHe8Xs5qXnSaW/c/ABM9alt+Vo+STaOChaDxuIBZU=

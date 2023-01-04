@@ -21,7 +21,7 @@ import (
 	l2types "github.com/mantlenetworkio/mantle/l2geth/core/types"
 	l2ethclient "github.com/mantlenetworkio/mantle/l2geth/ethclient"
 	l2rlp "github.com/mantlenetworkio/mantle/l2geth/rlp"
-	"github.com/mantlenetworkio/mt-batcher/l1l2client"
+	"github.com/mantlenetworkio/mantle/mt-batcher/l1l2client"
 	"github.com/shurcooL/graphql"
 	"google.golang.org/grpc"
 	"math/big"

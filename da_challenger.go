@@ -7,7 +7,7 @@ import (
 	ethc "github.com/ethereum/go-ethereum/common"
 	"github.com/mantlenetworkio/da-challenger/challenger"
 	bsscore "github.com/mantlenetworkio/mantle/bss-core"
-	"github.com/mantlenetworkio/mt-batcher/l1l2client"
+	"github.com/mantlenetworkio/mantle/mt-batcher/l1l2client"
 	"github.com/urfave/cli"
 	"time"
 )
