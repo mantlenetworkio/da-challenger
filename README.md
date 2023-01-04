@@ -25,18 +25,27 @@ parent:
 
 ## Install
 
-### Install dependencies
+### 1.Install dependencies
 ```bash
+git submodule update --init --recursive
+
 go mod tidy
 ```
 
-### build
+### 2.build binary
 ```bash
+make datalayr-mantle
 make binding
 make da-challenger
 ```
 
-### start 
+### 3.build docker
+```bash
+make datalayr-mantle
+docker build -t challenger:latest -f ./Dockerfile .
+```
+
+### 4.start 
 
 Config .env, You can refer to .env_example, if config finished, you can exec following command
 
