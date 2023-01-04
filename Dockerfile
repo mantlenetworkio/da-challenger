@@ -3,7 +3,7 @@ FROM golang:1.18.0-alpine3.15 as builder
 RUN apk add --no-cache make gcc musl-dev linux-headers git jq bash
 
 COPY ./da-challenger /go/da-challenger
-COPY ./datalayr-mantle /go/datalayr-mantle
+COPY ./da-challenger/datalayr-mantle /go/datalayr-mantle
 COPY ./bss-core /go/bss-core
 COPY ./l2geth /go/l2geth
 
